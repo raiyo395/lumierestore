@@ -1,9 +1,6 @@
 import { deliveryOptions } from './deliveryOptions.js';
 
-export let cart = [
-  { productId: "p1", quantity: 2, deliveryOptionId: '1' },
-  { productId: "p2", quantity: 1, deliveryOptionId: '1' }
-];
+export let cart = [];
 
 loadFromStorage();
 
