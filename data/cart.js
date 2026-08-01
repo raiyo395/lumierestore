@@ -1,4 +1,4 @@
-import { deliveryOptions } from '../../data/deliveryOptions.js';
+import { deliveryOptions } from './deliveryOptions.js';
 
 export let cart = [
   { productId: "p1", quantity: 2, deliveryOptionId: '1' },
