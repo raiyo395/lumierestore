@@ -372,3 +372,33 @@ nav a:focus-visible,
   color: #333;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .header-left-group {
+    gap: 1rem;
+  }
+
+  nav {
+    gap: 1rem;
+  }
+
+  .lumiere-search-container {
+    order: 3;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  header a[href="checkout.html"] {
+    margin-left: auto;
+  }
+
+  .cart-icon {
+    margin-right: 0;
+  }
+}
