@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIÈRE — Botanical Skincare</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left-group">
+      <a href="home.html" class="logo">LUMIÈRE</a>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+    </div>
+
+    <div class="lumiere-search-container">
+      <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search products...">
+      <span class="search-icon">&#x1F50D;</span>
+    </div>
+
+    <a href="checkout.html">
+      <i class="fa-solid fa-cart-arrow-down cart-icon"></i>
+      <span class="cart-count js-cart-count">0</span>
+    </a>
+
+  </header>
+
+  <main>
+    <div class="products-grid js-products-grid"></div>
+  </main>
+
+  <footer></footer>
+
+  <script type="module" src="/scripts/app.js"></script>
+
+</body>
+</html>

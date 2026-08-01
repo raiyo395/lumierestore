@@ -1,0 +1,35 @@
+export const products = [
+    { id: "p1",
+      name: "Rosewater Glow Serum",
+      image: "images/serum.jpg",
+      quantity: 1,
+      priceCents: 4200 },
+    { id: "p2",
+      name: "Botanical Radiance Cream",
+      image: "images/cream.jpg",
+      quantity: 1,
+      priceCents: 3800 },
+    { id: "p3",
+      name: "Vitamin C Brightening Oil",
+      image: "images/oil.jpg",
+      quantity: 1,
+      priceCents: 4500 },
+    { id: "p4",
+      name: "Calming Chamomile Cleanser",
+      image: "images/cleanser.jpg",
+      quantity: 1,
+      priceCents: 2800 },
+    { id: "p5",
+      name: "Hydra-Bloom Night Cream",
+      image: "images/nightcream.jpg",
+      quantity: 1,
+      priceCents: 5200 },
+    { id: "p6",
+      name: "Green Tea Purifying Mask",
+      image: "images/mask.jpg",
+      quantity: 1,
+      priceCents: 3200 }
+  ]
+  export function getProduct(productId) {
+  return products.find((product) => product.id === productId);
+}
