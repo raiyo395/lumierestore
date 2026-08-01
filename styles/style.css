@@ -464,3 +464,59 @@ nav a:focus-visible,
     letter-spacing: 0.03em;
   }
 }
+
+footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 2.5rem 2rem 1.5rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #a17422, #d1a751, #916616, #c59b43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #a17422;
+}
+
+.footer-copyright {
+  font-size: 0.7rem;
+  color: #999;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 2rem 1rem 1.25rem;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
