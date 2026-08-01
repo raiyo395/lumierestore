@@ -415,7 +415,6 @@ nav a:focus-visible,
   .product-container {
     padding: 0.75rem;
     min-width: 0;
-    overflow: hidden;
   }
 
   .product-container img {
@@ -454,6 +453,7 @@ nav a:focus-visible,
     min-width: 0;
     width: 100%;
     height: 38px;
+    box-sizing: border-box;
   }
 
   .add-button {
