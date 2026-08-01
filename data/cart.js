@@ -55,8 +55,6 @@ export function updateCartItem(productId, newQuantity) {
   if (!Number.isInteger(newQuantity) || newQuantity <= 0) {
     return;
   }
-console.log(item);
-console.log(newQuantity);console.log(item);
 
   item.quantity = newQuantity;
   updateCartQuantity();
