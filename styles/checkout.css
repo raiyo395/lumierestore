@@ -186,7 +186,6 @@
   background-color: #faf8f3;
 }
 
-/* NEW — highlights whichever option is currently selected */
 .delivery-option:has(.delivery-option-input:checked) {
   background-color: #faf6ec;
   border-left-color: #a17422;
@@ -213,7 +212,6 @@
   color: #a17422;
 }
 
-/* NEW — selected option's date text goes bold + dark, like an active state */
 .delivery-option:has(.delivery-option-input:checked) .delivery-option-date {
   color: #111;
   font-weight: 600;
