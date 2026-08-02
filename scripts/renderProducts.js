@@ -8,7 +8,8 @@ export function renderProductGrid(){
     <div class="product-container">
   <img src="${product.image}" alt="${product.name}">
   <p>${product.name}</p>
-  <p class="product-description">${product.description}</p>
+  <p class="product-description js-description-${product.id}">${product.description}</p>
+  <button type="button" class="read-more-btn js-read-more-btn" data-product-id="${product.id}">Read more</button>
   <p>$${formatCurrency(product.priceCents)}</p>
   
   <div class="purchase-controls">
@@ -58,6 +59,14 @@ export function renderProductGrid(){
       currentValue += 1;
       valElement.textContent = currentValue;
       
+    });
+   });
+   document.querySelectorAll('.js-read-more-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const productId = btn.dataset.productId;
+      const descElement = document.querySelector(`.js-description-${productId}`);
+      descElement.classList.toggle('expanded');
+      btn.textContent = descElement.classList.contains('expanded') ? 'Show less' : 'Read more';
     });
    });
 }
