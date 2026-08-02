@@ -158,7 +158,31 @@ nav a:focus-visible,
   color: #666;
   line-height: 1.4;
   margin: 4px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+
+.product-description.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #a17422;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: left;
+}
+
 .qty-container {
   display: flex;
   align-items: center;
